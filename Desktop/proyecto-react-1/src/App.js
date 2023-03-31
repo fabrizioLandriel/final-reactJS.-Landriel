@@ -1,13 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import {Login} from "./Login"
+import "./App.css";
+import ItemListContainer from "./components/ItemList/ItemListContainer";
+import CartWidget from "./components/CartWidget/CartWidget";
+import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
+  
+  let greeting = "Hola, usuario :D"
+
   return (
     <div className="App">
-      <Login />
-      
+      <Navbar />
+      <CartWidget/>
+      <ItemListContainer greeting = {greeting} color = "red"/>
     </div>
+
   );
 }
 
