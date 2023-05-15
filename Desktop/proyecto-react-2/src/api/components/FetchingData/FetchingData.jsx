@@ -17,8 +17,8 @@ const FetchingData = () => {
       method: "POST",
       body: JSON.stringify({
         userId: 7,
-        name: "pepito",
-        edad: 12,
+        name: "Fabrizio Landriel ",
+        edad: 18,
       }),
     });
     promesa.then().catch()
@@ -30,7 +30,7 @@ const FetchingData = () => {
     fetch("https://jsonplaceholder.typicode.com/users/2", {
         method: "PATCH",
         body: JSON.stringify({
-            name: "Jorge Duje"
+            name: "Angelina De Maio"
         })
     })
   }
@@ -42,8 +42,8 @@ const FetchingData = () => {
     <div>
       <h1>Peticiones</h1>
 
-      <button onClick={crearNuevoPost}>Crear Producto</button>
-      <button onClick={editarUser}>Editar usuario</button>
+      <button onClick={crearNuevoPost}>Create Product.</button>
+      <button onClick={editarUser}>Edit user.</button>
     </div>
   );
 };
